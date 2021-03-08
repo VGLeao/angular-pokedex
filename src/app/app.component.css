@@ -1,0 +1,11 @@
+.wrapper {
+  height: 640px;
+  width: 385px;
+  border: 1px solid rgba(100, 100, 100, 0.5);
+  border-radius: 25px;
+	overflow-y: scroll;
+}
+
+.container {
+	padding: 20px;
+}

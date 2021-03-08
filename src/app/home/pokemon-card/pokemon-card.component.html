@@ -1,0 +1,20 @@
+<div>
+  <div class="wrapper {{ pokemon.types[0].type.name }}">
+    <div class="img-wrapper">
+      <img
+        src="{{ pokemon.sprites.front_default }}"
+        alt="{{ pokemon.name }}"
+        class="pokemon-img"
+      />
+    </div>
+		<p>#001</p>
+    <p class="pokemon-name">{{ pokemon.name | titlecase }}</p>
+    <div class="pokemon-types">
+      <div *ngFor="let type of pokemon.types">
+        <div class="icon">
+          <img src="assets/icons/{{ type.type.name }}.svg" alt="grass" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
